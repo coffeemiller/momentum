@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeemiller's Momentum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-row-left">
+        <h2 id="clock">00:00:00</h2>
+    </div>
+    <div class="top-row-right">
+        <div class="weather" id="weather"></div>
+    </div>
+    <div class="container">
+      <div class="user_container" id="user_container">
+        <span class="user">What's your name?</span>
+        <form class="form" id="user_form">
+            <input type="text" class="input" id="user_input" autocomplete="off" required />
+        </form>
+      </div>
+      
+      <div class="greeting_container" id="greeting_container">
+        <span class="greeting" id="greeting_text"></span>
+      </div>
+
+      <div class="todo_container" id="todo_container">
+        <span class="question">Write ad To Do and Press Enter</span>
+        <form class="form" id="todo_form">
+          <input type="text" class="input" id="todo_input" autocomplete="off" required />
+        </form>
+        <ul class="todo-lists" id="todo_list"></ul>
+      </div>
+    </div>
+    <script src="js/weather.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <!-- <script src="js/mainFocus.js"></script> -->
+    <!-- <script src="js/todos.js"></script> -->
+
+    <script src="js/init.js"></script>
+</body>
+</html>
