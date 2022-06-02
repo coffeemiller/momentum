@@ -6,7 +6,9 @@ fetch(
     )
     .then(response => {
         const jsBody = document.querySelector('body');
-        jsBody.style = `background-image: url('${response.url}')`;
+        // jsBody.style = `background-image: url('${response.url}')`;
+        jsBody.style.backgroundImage = `url('${response.url}')`;
+        jsBody.style.backgroundSize = 'cover';
         // console.log("background image source download, success!!");
     })
     .catch(err => {
