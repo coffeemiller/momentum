@@ -8,7 +8,10 @@ fetch(
         const jsBody = document.querySelector('body');
         // jsBody.style = `background-image: url('${response.url}')`;
         jsBody.style.backgroundImage = `url('${response.url}')`;
-        jsBody.style.backgroundSize = 'cover';
+        jsBody.style.minHeight = "100%";
+        jsBody.style.minWidth = "100%";
+        jsBody.style.backgroundPosition = "center";
+        // jsBody.style.backgroundSize = 'cover';
         // console.log("background image source download, success!!");
     })
     .catch(err => {

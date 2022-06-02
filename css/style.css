@@ -273,9 +273,11 @@ img {
 
 .quote_text {
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color: #0a45dc;
-    margin-top: 10rem;
+    margin-top: 7rem;
     font-weight: 1000;
-    text-shadow: 2px 3px 2px rgb(196, 165, 37);
+    /* text-shadow: 2px 3px 2px rgb(196, 165, 37); */
+    /* text-shadow: 1px 1px 1px #000; */
+    text-shadow: 2px 2px 2px darkorange;
 }
