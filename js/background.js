@@ -1,18 +1,15 @@
-const imagWidth = 1920;
-const imagHeight = 1080;
+const imagWidth = 2562;
+const imagHeight = 3000;
 
 fetch(
         `https://picsum.photos/${imagWidth}/${imagHeight}/?random`
     )
     .then(response => {
         const jsBody = document.querySelector('body');
-        // jsBody.style = `background-image: url('${response.url}')`;
         jsBody.style.backgroundImage = `url('${response.url}')`;
-        jsBody.style.minHeight = "100%";
-        jsBody.style.minWidth = "100%";
-        jsBody.style.backgroundPosition = "center";
-        // jsBody.style.backgroundSize = 'cover';
-        // console.log("background image source download, success!!");
+        jsBody.style.backgroundRepeat = 'no-repeat';
+        jsBody.style.backgroundPosition = 'center';
+        jsBody.style.backgroundSize = 'cover';
     })
     .catch(err => {
         console.log(err);
