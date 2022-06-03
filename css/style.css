@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-/* body {
-    width: 100%;
-    height: 100%;
-} */
 
 body,
 input,
 textarea,
 button {
     color: #ffffff;
+}
+
+body {
+    background-color: #000;
 }
 
 input,
@@ -114,6 +114,17 @@ textarea {
 }
 
 .top-row-center {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+
+.top-row-corner {
     width: 30px;
     height: 30px;
     position: center;

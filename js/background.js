@@ -1,8 +1,10 @@
 const imagWidth = 2562;
 const imagHeight = 3000;
 
+//`https://picsum.photos/${imagWidth}/${imagHeight}/?random`
+
 fetch(
-        `https://picsum.photos/${imagWidth}/${imagHeight}/?random`
+       `https://source.unsplash.com/random/${imagWidth}x${imagHeight}`
     )
     .then(response => {
         const jsBody = document.querySelector('body');
