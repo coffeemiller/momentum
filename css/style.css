@@ -357,7 +357,9 @@ img {
         padding: 3px;
         margin-top: 90%;
         border-radius: 2%;
-        right: 20px;
+        right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .question {
