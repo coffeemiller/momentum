@@ -5,3 +5,4 @@
 + URL Random Quotes of the Day Parsing Addition
 + MyIp API Parsing Addition
 + ToDo List compleated function Addition
++ CSS Mobile Size Optimizing
