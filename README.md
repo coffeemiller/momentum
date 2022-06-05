@@ -1,6 +1,7 @@
 # Momentum Application Clone Coding
 + Basic Coding of Nomard Coder Javascript Course
-+ ToDo List Section Adding
-+ URL Random Background Image Parsing Adding
-+ URL Random Quotes of the Day Parsing Adding
-+ MyIp API Parsing Adding
++ ToDo List Section Addition
++ URL Random Background Image Parsing Addition
++ URL Random Quotes of the Day Parsing Addition
++ MyIp API Parsing Addition
++ ToDo List compleated function Addition
