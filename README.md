@@ -6,3 +6,4 @@
 + MyIp API Parsing Addition
 + ToDo List compleated function Addition
 + CSS Mobile Size Optimizing
++ Exception Handling function Addition - Internet DisConnected

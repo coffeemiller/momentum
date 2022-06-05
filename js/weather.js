@@ -34,14 +34,18 @@ function getCoods() {
 
 
 function exe() {
-    const coords = JSON.parse(localStorage.getItem(COORDS));
-    if (localStorage.getItem(COORDS) === null) {
-        getCoods();
-    } else {
+    try {
         const coords = JSON.parse(localStorage.getItem(COORDS));
-        const lat = coords.lat;
-        const lon = coords.lon;
-        setWeather(lat, lon);
+        if (localStorage.getItem(COORDS) === null) {
+            getCoods();
+        } else {
+            const coords = JSON.parse(localStorage.getItem(COORDS));
+            const lat = coords.lat;
+            const lon = coords.lon;
+            setWeather(lat, lon);
+        }
+    } catch (err) {} finally {
+        weatherText.innerText = 'No Data!';
     }
 }
 
