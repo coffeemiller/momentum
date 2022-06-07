@@ -217,10 +217,8 @@ img {
 }
 
 .todo_list span {
-    width: 100px;
-    margin-top: 3px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -234,7 +232,7 @@ img {
 .todo_list button {
     background: none;
     border: none;
-    margin-left: 10px;
+    margin-left: 5px;
     text-shadow: 1px 1px 1px #000;
 }
 
