@@ -11,7 +11,7 @@ function saveToDos() {
 }
 
 function deleteToDo(event) {
-    const li = event.target.parentElement;
+    const li = (event.target.parentElement).parentElement;
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
     saveToDos();
     li.remove();
@@ -55,7 +55,11 @@ function paintToDo(newTodo) {
     btnChk.checked = newTodo.completed;
     btnChk.addEventListener("click", checkBoxToggle)
     const button = document.createElement("button");
-    button.innerText = "❌";
+    const btnImg = document.createElement("img");
+    btnImg.src = "img/delBtn.png";
+    btnImg.style.cssText = "height: 100%; width: 100%;";
+    button.appendChild(btnImg);
+    button.style.cssText = "height: 15px";
     button.addEventListener("click", deleteToDo)
     li.appendChild(btnChk);
     li.appendChild(span);
